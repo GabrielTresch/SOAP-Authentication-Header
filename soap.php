@@ -18,8 +18,6 @@ $authvalues = new SoapVar($securityHeader,XSD_ANYXML);
 $header = new SoapHeader("http://www.gesmag.com/","Security",$authvalues);
 $clientSoap->__setSoapHeaders($header);
 
-$param->codeClient = 25;
-
 $return = $clientSoap->PARAMETER;
 
 echo"<pre>";
